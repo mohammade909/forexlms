@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { getUserNotifications } from '../redux/notificationSlice'; // Adjust path as necessary
+import { getUserNotifications } from '../../redux/notificationSlice'; // Adjust path as necessary
 import { FaInfoCircle, FaExclamationTriangle, FaTimesCircle } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 
