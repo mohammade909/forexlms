@@ -41,11 +41,19 @@ import { FaRegQuestionCircle } from "react-icons/fa";
 import { FaRegCalendarCheck, FaBell, FaBookmark,FaChartPie  } from "react-icons/fa";
 import { MdAssignment } from "react-icons/md";
 import { GrAnnounce } from "react-icons/gr";
+import { Newspaper } from "lucide-react";
 const navigation = [
   {
     name: "Dashboard",
     href: "/dashboard/admin",
     icon: IoHome,
+    initial: "DAS",
+    current: true,
+  },
+  {
+    name: "News Feed",
+    href: "/dashboard/news",
+    icon: Newspaper,
     initial: "DAS",
     current: true,
   },

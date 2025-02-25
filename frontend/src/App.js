@@ -95,6 +95,8 @@ import Offers from "./admin/components/offers/Offers";
 import CourseOverview from "./admin/components/courses/CourseOverview";
 import OfferForm from "./admin/components/offers/OfferForm";
 import AnnouncementList from "./admin/components/announcements/Announcemnets";
+import TradingDashboard from "./Test";
+import NewsFeed from "./components/News";
 
 function App() {
   return (
@@ -108,6 +110,7 @@ function App() {
               <Route path="/dashboard/students" element={<Students />} />
               <Route path="/dashboard/classes" element={<Classes />} />
               <Route path="/dashboard/assignments" element={<Assignments />} />
+              <Route path="/dashboard/news" element={<NewsFeed />} />
               <Route
                 path="/dashboard/assignments/:id"
                 element={<AssignmentDetails />}
@@ -257,6 +260,9 @@ function App() {
           </Route>
           <Route path="/login" element={<Login />} />
           <Route path="/admin/login" element={<AdminLogin />} />
+          <Route path="/test" element={<TradingDashboard />} />
+          <Route path="/news" element={<NewsFeed />} />
+       
           {/* <Route path="/register" element={<Register />} /> */}
         </Routes>
       </ScrollToTop>
